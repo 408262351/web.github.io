@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
-
 Name       : Emblazoned 
 Description: A two-column, fixed-width design for 1024x768 screen resolutions.
 Version    : 1.0
 Released   : 20090829
-
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,22 +17,63 @@ Released   : 20090829
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
 </head>
 <body>
 	<div id="header-wrapper">
 	<div id="header">
 		<div id="menu">
 			<ul>
-				<li><a href="#" class="first">主頁</a></li>
-				<li><a href="#">全部題目</a></li>
-				<li><a href="choose.html">題目選擇器</a></li>
-				<li><a href="#">經典題目</a></li>
-				
+				<li><a href="#" class="first">Home</a></li>
+				<li class="current_page_item"><a href="#">Blog</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 		<!-- end #menu -->
 		<div id="search">
-			<form method="get" action="">
+			<form method="get" action="index_uva2.html">
 				<fieldset>
 				<input type="text" name="s" id="search-text" size="15" />
 				<input type="submit" id="search-submit" value="GO" />
@@ -47,8 +88,8 @@ Released   : 20090829
 <div id="wrapper">
 	<div id="page">
 	<div id="logo">
-		<h1>UVA題目和解答 </h1>
-		
+		<h1><a href="#">Emblazoned  </a></h1>
+		<p>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></p>
 	</div>
 	<hr />
 	<!-- end #logo -->
@@ -78,20 +119,26 @@ Released   : 20090829
 		</div>
 		<!-- end #content -->
 		<div id="sidebar">
+			<div class="dropdown">
 			<ul>
 				
 				<li>
-					<h2>入門題 </h2>
+					<button class="dropbtn">Pellenteque ABC </button>
+					<div class="dropdown-content">
 					<ul>
-						<li><a href="index_uva1.html">題目1</a></li>
-						<li><a href="index_uva2.html">題目2</a></li>
-						<li><a href="index_uva3.html">題目3</a></li>
-						<li><a href="#">題目4</a></li>
-						<li><a href="#">題目5</a></li>
-						<li><a href="#">題目6</a></li>
-						<li><a href="#">題目7</a></li>
-						<li><a href="#">題目8</a></li>
+						<li><a href="index_uva1.html">TTTTTTT</a></li>
+						<li><a href="#">Magna lacus bibendum mauris</a></li>
+						<li><a href="#">Velit semper nisi molestie</a></li>
+						<li><a href="#">Eget tempor eget nonummy</a></li>
+						<li><a href="#">Nec metus sed donec</a></li>
+						<li><a href="#">Velit semper nisi molestie</a></li>
+						<li><a href="#">Eget tempor eget nonummy</a></li>
+						<li><a href="#">Nec metus sed donec</a></li>
 					</ul>
+					</div>
+					</div>
+				
+					 
 				</li>
 				<li>
 					<h2>Turpis nulla</h2>
@@ -108,7 +155,8 @@ Released   : 20090829
 						<li><a href="#">Nec metus sed donec</a></li>
 					</ul>
 				</li>
-			</ul>
+			  </ul>
+			
 		</div>
 		<!-- end #sidebar -->
 		<div style="clear: both;">&nbsp;</div>
